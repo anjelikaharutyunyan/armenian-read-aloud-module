@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="hy">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Armenian Read Aloud Demo</title>
+  <link rel="stylesheet" href="armenian-reader.css">
+  <style>
+    body { max-width: 48rem; margin: 3rem auto; padding: 0 1rem; font: 1.1rem/1.8 system-ui, sans-serif; }
+    [data-reader-play] { margin-bottom: 1rem; }
+  </style>
+  <script src="armenian-speech.js" defer></script>
+  <script src="armenian-reader-widget.js" defer></script>
+</head>
+<body>
+  <section data-armenian-reader>
+    <button type="button" data-reader-play aria-pressed="false"
+            data-label-play="Կարդալ էջը" data-label-stop="Դադարեցնել ընթերցումը">
+      Կարդալ էջը
+    </button>
+    <p data-reader-status role="status" aria-live="polite" hidden></p>
+    <main data-reader-content>
+      <h1>Բարի գալուստ</h1>
+      <p>Այս ցուցադրական էջը ցույց է տալիս, թե ինչպես կարելի է հայերեն տեքստը լսել բարձրաձայն։ Ընթացիկ արտասանվող բառը ընդգծվում է։</p>
+      <p data-reader-ignore>Այս պարբերությունը չի ընթերցվի, քանի որ ունի data-reader-ignore հատկանիշը։</p>
+    </main>
+  </section>
+</body>
+</html>
